@@ -21,14 +21,14 @@ data = {
 }
 
 df = pd.DataFrame(data)
-vectorizer = joblib.load("d:\\Mini 3\\smart_health_assistant\\vectorizer.pkl")
+vectorizer = joblib.load("vectorizer.pkl")  # Use relative path
 X = vectorizer.transform(df['symptoms'])
 y = df['disease']
 
 model = GradientBoostingClassifier(n_estimators=100)
 model.fit(X, y)
 
-with open("d:\\Mini 3\\smart_health_assistant\\disease_info.json") as f:
+with open("disease_info.json") as f:  # Use relative path
     disease_info = json.load(f)
 
 # UI
