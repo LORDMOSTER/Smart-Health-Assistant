@@ -1,0 +1,14 @@
+{
+  "Flu": {
+    "medicines": {
+      "default": ["Paracetamol", "Cough Syrup"],
+      "penicillin": ["Acetaminophen"]
+    }
+  },
+  "Migraine": {
+    "medicines": {
+      "default": ["Ibuprofen", "Rest"],
+      "aspirin": ["Naproxen"]
+    }
+  }
+}
